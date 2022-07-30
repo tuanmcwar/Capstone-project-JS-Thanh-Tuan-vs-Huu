@@ -538,48 +538,49 @@ navbar .container .navbar .Sport {
   background-repeat: no-repeat, repeat;
   background-position: bottom center;
 }
-.container .swiper .swiper-wrapper {
-  position: relative;
-}
 .container .swiper .swiper-wrapper .swiper-slide {
-  text-align: center;
   font-size: 18px;
+  display: flex;
 }
-.container .swiper .swiper-wrapper .swiper-slide img {
-  position: absolute;
-  width: 821px;
-  height: 392px;
-  left: 86px;
-  top: 5px;
+.container .swiper .swiper-wrapper .swiper-slide .carousel-img {
+  flex-basis: 200px;
+  flex: 0 0 auto;
+  width: 70%;
+  text-align: center;
 }
-.container .swiper .swiper-wrapper .swiper-slide h3 {
-  position: absolute;
-  width: 291px;
-  height: 51px;
-  left: 930px;
-  top: 124px;
+.container .swiper .swiper-wrapper .swiper-slide .carousel-img .swiper-lazy {
+  transform: scaleX(-1);
+}
+.container .swiper .swiper-wrapper .swiper-slide .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+.container .swiper .swiper-wrapper .swiper-slide .product-info h3 {
   font-size: 40px;
   font-weight: 300;
   color: #000;
   line-height: 48px;
 }
-.container .swiper .swiper-wrapper .swiper-slide p {
-  position: absolute;
+.container .swiper .swiper-wrapper .swiper-slide .product-info p {
   width: 291px;
   height: 51px;
-  left: 890px;
-  top: 175px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
   font-size: 20px;
   font-weight: 300;
   color: #000;
   line-height: 24px;
 }
-.container .swiper .swiper-wrapper .swiper-slide button {
-  position: absolute;
+.container .swiper .swiper-wrapper .swiper-slide .product-info button {
   width: 150px;
   height: 50px;
-  left: 950px;
-  top: 225px;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -636,6 +637,7 @@ navbar .container .navbar .Sport {
 .productFeature .container {
   width: 1280px;
   height: 1044px;
+  overflow: hidden;
 }
 .productFeature .container .product-feature-label {
   font-size: 40px;
@@ -645,29 +647,31 @@ navbar .container .navbar .Sport {
   text-align: center;
   margin-top: 30px;
 }
-.productFeature .container .product-item {
+.productFeature .container .product .product-item {
   margin: 50px;
   display: grid;
   height: 100%;
   grid-template: repeat(3, 1fr)/repeat(3, 1fr);
   gap: 50px 60px;
 }
-.productFeature .container .product-item .item {
+.productFeature .container .product .product-item .item {
   background: #f8f8f8;
   position: relative;
 }
-.productFeature .container .product-item .item .product-img {
+.productFeature .container .product .product-item .item .product-img {
   display: block;
   margin: 45px 57px 30px 57px;
+  width: 250px;
+  height: 200px;
 }
-.productFeature .container .product-item .item .product-name {
+.productFeature .container .product .product-item .item .product-name {
   margin-left: 23px;
   font-size: 24px;
   font-weight: 300;
   color: #000;
   line-height: 29px;
 }
-.productFeature .container .product-item .item .product-description {
+.productFeature .container .product .product-item .item .product-description {
   margin-left: 23px;
   margin-top: 8px;
   margin-bottom: 13px;
@@ -682,13 +686,17 @@ navbar .container .navbar .Sport {
   text-overflow: ellipsis;
   word-break: break-word;
 }
-.productFeature .container .product-item .item .card-bottom {
+.productFeature .container .product .product-item .item .card-bottom {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   height: 64px;
 }
-.productFeature .container .product-item .item .card-bottom .btn-buy {
+.productFeature .container .product .product-item .item .card-bottom .btn-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 50%;
   height: 100%;
   border: none;
@@ -698,7 +706,7 @@ navbar .container .navbar .Sport {
   color: #000;
   line-height: 29px;
 }
-.productFeature .container .product-item .item .card-bottom .product-price {
+.productFeature .container .product .product-item .item .card-bottom .product-price {
   height: 100%;
   width: 50%;
   display: flex;
@@ -712,182 +720,117 @@ navbar .container .navbar .Sport {
 }
 
 .productdetail .container {
-  position: relative;
   width: 1280px;
-  height: 530px;
+  height: 500px;
 }
-.productdetail .container .image {
-  position: absolute;
+.productdetail .container .productDeteal {
+  margin-left: 100px;
+  margin-top: 108px;
+  display: flex;
+  height: 100%;
+  gap: 10%;
+}
+.productdetail .container .productDeteal .image {
+  flex: 0 0 auto;
   width: 334px;
   height: 355px;
-  left: 65px;
-  top: 58px;
-  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
 }
-.productdetail .container .image img {
-  position: absolute;
+.productdetail .container .productDeteal .image img {
   width: 220px;
   height: 156px;
-  left: 57px;
-  top: 109px;
+  margin: auto;
 }
-.productdetail .container h3 {
-  position: absolute;
-  width: 196px;
-  height: 36px;
-  left: 527px;
-  top: 67px;
+.productdetail .container .productDeteal .product-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productdetail .container .productDeteal .product-info .product-title {
   font-size: 30px;
   font-weight: 300;
   color: #000;
   line-height: 36px;
 }
-.productdetail .container p {
-  position: absolute;
+.productdetail .container .productDeteal .product-info .product-description {
   width: 503px;
-  height: 90px;
-  left: 527px;
-  top: 112px;
   font-size: 16px;
   font-weight: 400;
   color: #140101;
   line-height: 19px;
 }
-.productdetail .container h4 {
-  position: absolute;
-  width: 162px;
-  height: 58px;
-  left: 527px;
-  top: 202px;
+.productdetail .container .productDeteal .product-info h4 {
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
   color: #1ed90e;
   line-height: 29px;
 }
-.productdetail .container .btn38 {
-  position: absolute;
+.productdetail .container .productDeteal .product-info .size .btn-size {
   width: 50px;
   height: 50px;
-  left: 526px;
-  top: 250px;
   border: none;
+  margin-right: 10px;
   background-color: #cccccc;
   font-size: 24px;
   font-weight: 600;
   color: #1e1d1d;
   line-height: 29px;
 }
-.productdetail .container .btn39 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 597px;
-  top: 250px;
-  border: none;
-  background-color: #cccccc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #1e1d1d;
-  line-height: 29px;
-}
-.productdetail .container .btn40 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 669px;
-  top: 250px;
-  border: none;
-  background-color: #cccccc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #1e1d1d;
-  line-height: 29px;
-}
-.productdetail .container .btn41 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 740px;
-  top: 250px;
-  border: none;
-  background-color: #cccccc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #1e1d1d;
-  line-height: 29px;
-}
-.productdetail .container .btn42 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 811px;
-  top: 250px;
-  border: none;
-  background-color: #cccccc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #1e1d1d;
-  line-height: 29px;
-}
-.productdetail .container .price {
-  position: absolute;
-  width: 113px;
-  height: 47px;
-  left: 527px;
-  top: 317px;
+.productdetail .container .productDeteal .product-info .price {
+  margin-bottom: 20px;
+  margin-top: 17px;
   font-size: 30px;
   font-weight: 600;
   color: #fc0303;
   line-height: 36px;
 }
-.productdetail .container .plus {
-  position: absolute;
+.productdetail .container .productDeteal .product-info .volume {
+  display: flex;
+}
+.productdetail .container .productDeteal .product-info .volume .plus {
   width: 50px;
   height: 50px;
-  left: 527px;
-  top: 370px;
-  border: none;
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 36px;
-  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
-}
-.productdetail .container .volunme {
-  position: absolute;
-  width: 14px;
-  height: 36px;
-  left: 597px;
-  top: 377px;
   font-size: 30px;
   font-weight: 400;
-  color: #000;
-  line-height: 36px;
-}
-.productdetail .container .noplus {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 636px;
-  top: 370px;
-  border: none;
-  font-size: 30px;
-  font-weight: 600;
   color: #fff;
   line-height: 36px;
   background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
-}
-.productdetail .container .add {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 527px;
-  top: 427px;
   border: none;
+}
+.productdetail .container .productDeteal .product-info .volume .number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fc0303;
+  line-height: 36px;
+}
+.productdetail .container .productDeteal .product-info .volume .noplus {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 36px;
+  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+  border: none;
+}
+.productdetail .container .productDeteal .product-info .add-card {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
   line-height: 29px;
+  width: 175px;
+  height: 64px;
+  border: none;
+  margin-top: 7px;
   background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
 }
 
