@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+  width: 1280px;
+  height: 530px;
+
+  .swiper {
+    width: 1280px;
+    height: 100%;
+    background-image: url("../../../assets/image/image6.png");
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center;
+
+    .swiper-wrapper {
+      position: relative;
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        img {
+          position: absolute;
+          width: 821px;
+          height: 392px;
+          left: 86px;
+          top: 5px;
+        }
+        h3 {
+          position: absolute;
+          width: 291px;
+          height: 51px;
+          left: 930px;
+          top: 124px;
+          @include text($text-4xl, $text-light, $text-c1-dark, 48px);
+        }
+        p {
+          position: absolute;
+          width: 291px;
+          height: 51px;
+          left: 890px;
+          top: 175px;
+
+          @include text($text-2xl, $text-light, $text-c1-dark, 24px);
+        }
+        button {
+          position: absolute;
+          width: 150px;
+          height: 50px;
+          left: 950px;
+          top: 225px;
+          @include text($text-2xl, $text-light, $text-c1-light, 24px);
+          border: none;
+          background: #f8b653;
+        }
+      }
+    }
+    .fa-caret-right {
+      position: absolute;
+      width: 66.13px;
+      height: 45.71px;
+      left: 1221.14px;
+      top: 175px;
+      font-size: 100px;
+      color: rgba(241, 211, 211, 0.535);
+    }
+    .fa-caret-left {
+      position: absolute;
+      width: 66.13px;
+      height: 45.71px;
+      left: 18px;
+      top: 183.13px;
+      font-size: 100px;
+      color: rgba(241, 211, 211, 0.535);
+    }
+    .swiper-button-next {
+      opacity: 0;
+    }
+    .swiper-button-prev {
+      opacity: 0;
+    }
+    .swiper-pagination {
+      top: 420px;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      background-color: $bg-c1-secondary;
+      border: 1px solid gray;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $bg-c1-secondary;
+      border: 1px solid $text-c1-dark;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 10px;
+    }
+  }
+}

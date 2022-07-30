@@ -1,0 +1,155 @@
+.productdetail {
+  .container {
+    position: relative;
+    width: 1280px;
+    height: 530px;
+    .image {
+      position: absolute;
+      width: 334px;
+      height: 355px;
+      left: 65px;
+      top: 58px;
+      background: #f8f8f8;
+
+      img {
+        position: absolute;
+        width: 220px;
+        height: 156px;
+        left: 57px;
+        top: 109px;
+      }
+    }
+    h3 {
+      position: absolute;
+      width: 196px;
+      height: 36px;
+      left: 527px;
+      top: 67px;
+      @include text($text-3xl, $text-light, $text-c1-dark, 36px);
+    }
+    p {
+      position: absolute;
+      width: 503px;
+      height: 90px;
+      left: 527px;
+      top: 112px;
+      @include text($text-base, $text-regular, #140101, 19px);
+    }
+    h4 {
+      position: absolute;
+      width: 162px;
+      height: 58px;
+      left: 527px;
+      top: 202px;
+      @include text(24px, $text-regular, #1ed90e, 29px);
+    }
+    .btn38 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 526px;
+      top: 250px;
+      border: none;
+
+      background-color: #cccccc;
+      @include text(24px, $text-semibold, #1e1d1d, 29px);
+    }
+    .btn39 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 597px;
+      top: 250px;
+      border: none;
+
+      background-color: #cccccc;
+      @include text(24px, $text-semibold, #1e1d1d, 29px);
+    }
+    .btn40 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 669px;
+      top: 250px;
+      border: none;
+
+      background-color: #cccccc;
+      @include text(24px, $text-semibold, #1e1d1d, 29px);
+    }
+    .btn41 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 740px;
+      top: 250px;
+      border: none;
+
+      background-color: #cccccc;
+      @include text(24px, $text-semibold, #1e1d1d, 29px);
+    }
+    .btn42 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 811px;
+      top: 250px;
+      border: none;
+
+      background-color: #cccccc;
+      @include text(24px, $text-semibold, #1e1d1d, 29px);
+    }
+    .price {
+      position: absolute;
+      width: 113px;
+      height: 47px;
+      left: 527px;
+      top: 317px;
+      @include text($text-3xl, $text-semibold, #fc0303, 36px);
+    }
+    .plus {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 527px;
+      top: 370px;
+      border: none;
+
+      @include text($text-3xl, $text-semibold, $text-c1-light, 36px);
+      background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+    }
+    .volunme {
+      position: absolute;
+      width: 14px;
+      height: 36px;
+      left: 597px;
+      top: 377px;
+      @include text($text-3xl, $text-regular, $text-c1-dark, 36px);
+    }
+    .noplus {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 636px;
+      top: 370px;
+      border: none;
+      @include text($text-3xl, $text-semibold, $text-c1-light, 36px);
+      background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+    }
+    .add {
+      position: absolute;
+      width: 175px;
+      height: 64px;
+      left: 527px;
+      top: 427px;
+      border: none;
+
+      @include text(24px, $text-semibold, $text-c1-light, 29px);
+
+      background: linear-gradient(
+        270deg,
+        rgba(62, 32, 248, 0.9) 5.14%,
+        #d017ee 89.71%
+      );
+    }
+  }
+}
