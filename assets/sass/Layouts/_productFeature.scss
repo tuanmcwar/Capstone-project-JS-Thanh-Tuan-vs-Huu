@@ -3,8 +3,8 @@
   .container {
     // display: flex;
     width: 1280px;
-    height: 1044px;
-    overflow: hidden;
+    height: 100%;
+
     .product-feature-label {
       @include text($text-4xl, $text-regular, $text-c1-dark, 48px);
       text-align: center;
@@ -15,8 +15,9 @@
         margin: 50px;
         display: grid;
         height: 100%;
-        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-template: auto 1fr / auto 1fr auto;
         gap: 50px 60px;
+        width: calc(100% / 3);
         .item {
           //
           background: $bg-c1-secondary;
@@ -79,6 +80,33 @@
               background-color: #dedddc;
               @include text(24px, $text-semibold, $text-c1-dark, 29px);
             }
+          }
+        }
+      }
+      #pagination {
+        background-color: bg-c1-secondary;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        a {
+          list-style: none;
+          background-color: $text-c1-der;
+          margin-right: 20px;
+          height: 50px;
+          width: 50px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          border-radius: 50%;
+          transition: all 0.5s;
+          @include text($text-2xl, $text-semibold, text-c1-dark, 36px);
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.3;
           }
         }
       }
