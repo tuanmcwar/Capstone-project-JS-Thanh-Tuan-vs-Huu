@@ -1,6 +1,16 @@
 window.onload = function () {
   getProduct();
 };
+function pagination(arr) {
+  console.log("dfasdfsadasd", arr);
+  let pdPage = arr;
+  let curPage = 1;
+  let perPage = 2;
+  let totalPages = pdPage.length / 2;
+  let perPD = [];
+  perPD =
+    pdPage.slice(curPage - 1) * (perPage, curPage - 1) * perPage + perPage;
+}
 function getProduct() {
   var promise = axios({
     url: "https://shop.cyberlearn.vn/api/Product", //Đường dẫn backend cung cấp
@@ -8,9 +18,9 @@ function getProduct() {
   });
   //Xử lý thành công
   promise.then(function (result) {
-    // console.log("hihi ", result.data.content);
+    console.log("hihi ", result.data.content);
     //Sau khi lấy dữ liệu từ backend về dùng dữ liệu đó tạo ra tr trên table
-    renderProduct(result.data.content);
+    pagination(result.data.content);
   });
   //Xử lý thất bại
   promise.catch(function (err) {});

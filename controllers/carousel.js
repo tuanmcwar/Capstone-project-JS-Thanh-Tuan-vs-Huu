@@ -52,7 +52,8 @@ function getCargousel(arrCargousel, index) {
                 <div class="product-info">
                     <h3 id="productName">${pd.name}</h3>
                     <p id="productDescription">${pd.description}</p>
-                    <button id="Buy">Buy now</button>
+                    
+                    <a href="../view/detail.html?productid=${pd.id}" id="Buy" onclick="showDetail('${pd.id}')">  Buy now</a>
                 </div>
         </div>
        `;

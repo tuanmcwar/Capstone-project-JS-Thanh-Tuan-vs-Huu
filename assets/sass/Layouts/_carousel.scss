@@ -46,10 +46,13 @@
 
             @include text($text-2xl, $text-light, $text-c1-dark, 24px);
           }
-          button {
+          a {
             width: 150px;
             height: 50px;
-
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include text($text-2xl, $text-light, $text-c1-light, 24px);
             border: none;
             background: #f8b653;

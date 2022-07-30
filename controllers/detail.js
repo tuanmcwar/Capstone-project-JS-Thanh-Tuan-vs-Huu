@@ -49,9 +49,9 @@ function getProductById(product) {
             </div>
             <div class="price">${product.price}$</div>
             <div class="volume">
-              <button class="plus">+</button>
+              <button class="plus" onclick="addVolume()">+</button>
               <p class="number">1</p>
-              <button class="noplus">-</button>
+              <button class="noplus"onclick="noAddVolume()">-</button>
             </div>
             <button class="add-card">Add to card</button>
           </div>"`;
@@ -81,4 +81,17 @@ function relatedProducts(arr) {
         `;
     document.querySelector(".product-item").innerHTML = html;
   }
+}
+function addVolume() {
+  const valueVolume = Number(document.querySelector(".number").innerHTML);
+
+  document.querySelector(".number").innerHTML = valueVolume + 1;
+}
+function noAddVolume() {
+  const valueVolume = Number(document.querySelector(".number").innerHTML);
+
+  if (valueVolume !== 1) {
+    document.querySelector(".number").innerHTML = valueVolume - 1;
+  }
+  //
 }
