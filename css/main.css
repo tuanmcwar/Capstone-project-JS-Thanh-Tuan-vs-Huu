@@ -254,7 +254,7 @@ navbar .container .navbar .Sport {
   position: relative;
   width: 1280px;
   height: 538px;
-  background: #fffcfc;
+  background: #f8f8f8;
 }
 .RegisterContent .container h1 {
   position: absolute;
@@ -618,11 +618,11 @@ navbar .container .navbar .Sport {
 .container .swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
-  background-color: #fffcfc;
+  background-color: #f8f8f8;
   border: 1px solid gray;
 }
 .container .swiper .swiper-pagination-bullet-active {
-  background-color: #fffcfc;
+  background-color: #f8f8f8;
   border: 1px solid #000;
 }
 .container .swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -634,426 +634,73 @@ navbar .container .navbar .Sport {
   background: #fffcfc;
 }
 .productFeature .container {
-  position: relative;
   width: 1280px;
   height: 1044px;
 }
-.productFeature .container h3 {
-  position: absolute;
-  width: 351px;
-  height: 48px;
-  left: 476px;
-  top: 16px;
+.productFeature .container .product-feature-label {
   font-size: 40px;
   font-weight: 400;
   color: #000;
   line-height: 48px;
+  text-align: center;
+  margin-top: 30px;
 }
-.productFeature .container .item1 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 99px;
-  top: 153px;
+.productFeature .container .product-item {
+  margin: 50px;
+  display: grid;
+  height: 100%;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  gap: 50px 60px;
+}
+.productFeature .container .product-item .item {
   background: #f8f8f8;
+  position: relative;
 }
-.productFeature .container .item1 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
+.productFeature .container .product-item .item .product-img {
+  display: block;
+  margin: 45px 57px 30px 57px;
 }
-.productFeature .container .item1 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
+.productFeature .container .product-item .item .product-name {
+  margin-left: 23px;
   font-size: 24px;
   font-weight: 300;
   color: #000;
   line-height: 29px;
 }
-.productFeature .container .item1 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
+.productFeature .container .product-item .item .product-description {
+  margin-left: 23px;
+  margin-top: 8px;
+  margin-bottom: 13px;
   font-size: 20px;
   font-weight: 300;
   color: #cbc9c9;
   line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
-.productFeature .container .item1 .cardBooton {
+.productFeature .container .product-item .item .card-bottom {
   display: flex;
   align-items: center;
-}
-.productFeature .container .item1 .cardBooton button {
-  position: absolute;
-  width: 175px;
+  flex-wrap: nowrap;
   height: 64px;
-  left: 0px;
-  top: 305px;
+}
+.productFeature .container .product-item .item .card-bottom .btn-buy {
+  width: 50%;
+  height: 100%;
+  border: none;
   background-color: #e1b067;
   font-size: 24px;
   font-weight: 200;
   color: #000;
   line-height: 29px;
-  border: none;
 }
-.productFeature .container .item1 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dedddc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item2 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 500px;
-  top: 153px;
-  background: #f8f8f8;
-}
-.productFeature .container .item2 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
-}
-.productFeature .container .item2 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item2 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #cbc9c9;
-  line-height: 24px;
-}
-.productFeature .container .item2 .cardBooton {
-  display: flex;
-  align-items: center;
-}
-.productFeature .container .item2 .cardBooton button {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 0px;
-  top: 305px;
-  background-color: #e1b067;
-  font-size: 24px;
-  font-weight: 200;
-  color: #000;
-  line-height: 29px;
-  border: none;
-}
-.productFeature .container .item2 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dedddc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item3 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 900px;
-  top: 153px;
-  background: #f8f8f8;
-}
-.productFeature .container .item3 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
-}
-.productFeature .container .item3 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item3 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #cbc9c9;
-  line-height: 24px;
-}
-.productFeature .container .item3 .cardBooton {
-  display: flex;
-  align-items: center;
-}
-.productFeature .container .item3 .cardBooton button {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 0px;
-  top: 305px;
-  background-color: #e1b067;
-  font-size: 24px;
-  font-weight: 200;
-  color: #000;
-  line-height: 29px;
-  border: none;
-}
-.productFeature .container .item3 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dedddc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item4 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 99px;
-  top: 571px;
-  background: #f8f8f8;
-}
-.productFeature .container .item4 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
-}
-.productFeature .container .item4 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item4 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #cbc9c9;
-  line-height: 24px;
-}
-.productFeature .container .item4 .cardBooton {
-  display: flex;
-  align-items: center;
-}
-.productFeature .container .item4 .cardBooton button {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 0px;
-  top: 305px;
-  background-color: #e1b067;
-  font-size: 24px;
-  font-weight: 200;
-  color: #000;
-  line-height: 29px;
-  border: none;
-}
-.productFeature .container .item4 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dedddc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item5 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 520px;
-  top: 571px;
-  background: #f8f8f8;
-}
-.productFeature .container .item5 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
-}
-.productFeature .container .item5 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item5 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #cbc9c9;
-  line-height: 24px;
-}
-.productFeature .container .item5 .cardBooton {
-  display: flex;
-  align-items: center;
-}
-.productFeature .container .item5 .cardBooton button {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 0px;
-  top: 305px;
-  background-color: #e1b067;
-  font-size: 24px;
-  font-weight: 200;
-  color: #000;
-  line-height: 29px;
-  border: none;
-}
-.productFeature .container .item5 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dedddc;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item6 {
-  position: absolute;
-  width: 334px;
-  height: 369px;
-  left: 900px;
-  top: 571px;
-  background: #f8f8f8;
-}
-.productFeature .container .item6 img {
-  position: absolute;
-  width: 220px;
-  height: 156px;
-  left: 57px;
-  top: 45px;
-}
-.productFeature .container .item6 h3 {
-  position: absolute;
-  width: 185px;
-  height: 29px;
-  left: 23px;
-  top: 231px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 29px;
-}
-.productFeature .container .item6 p {
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 23px;
-  top: 268px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #cbc9c9;
-  line-height: 24px;
-}
-.productFeature .container .item6 .cardBooton {
-  display: flex;
-  align-items: center;
-}
-.productFeature .container .item6 .cardBooton button {
-  position: absolute;
-  width: 175px;
-  height: 64px;
-  left: 0px;
-  top: 305px;
-  background-color: #e1b067;
-  font-size: 24px;
-  font-weight: 200;
-  color: #000;
-  line-height: 29px;
-  border: none;
-}
-.productFeature .container .item6 .cardBooton p {
-  position: absolute;
-  width: 160px;
-  height: 64px;
-  left: 174px;
-  top: 305px;
+.productFeature .container .product-item .item .card-bottom .product-price {
+  height: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1254,5 +901,8 @@ navbar .container .navbar .Sport {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+footer {
+  margin-top: 200px;
 }
