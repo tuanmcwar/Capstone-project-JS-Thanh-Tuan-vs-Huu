@@ -18,10 +18,15 @@
         display: flex;
         justify-content: center;
         background-color: #f8f8f8;
+
         img {
           width: 220px;
           height: 156px;
           margin: auto;
+          transition: linear 0.5s;
+        }
+        &:hover img {
+          transform: scaleX(-1);
         }
       }
       .product-info {
@@ -50,6 +55,11 @@
             background-color: #cccccc;
 
             @include text(24px, $text-semibold, #1e1d1d, 29px);
+            &:hover {
+              cursor: pointer;
+              background-color: $bg-c1-primary;
+              transition: all 0.5s;
+            }
           }
         }
         .price {
@@ -66,6 +76,12 @@
             @include text($text-3xl, $text-regular, $text-c1-light, 36px);
             background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
             border: none;
+            &:hover {
+              cursor: pointer;
+              background: $bg-c1-primary;
+              transition: all 1s;
+              border: 3px solid $text-c1-primary;
+            }
           }
           .number {
             width: 50px;
@@ -81,6 +97,12 @@
             @include text($text-3xl, $text-regular, $text-c1-light, 36px);
             background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
             border: none;
+            &:hover {
+              cursor: pointer;
+              background: $bg-c1-primary;
+              transition: all 1s;
+              border: 3px solid $text-c1-primary;
+            }
           }
         }
         .add-card {
@@ -89,11 +111,19 @@
           height: 64px;
           border: none;
           margin-top: 7px;
-          background: linear-gradient(
-            270deg,
-            rgba(62, 32, 248, 0.9) 5.14%,
-            #d017ee 89.71%
+          background-image: linear-gradient(
+            to right,
+            $bg-c1-primary 0,
+            rgba(62, 32, 248, 0.9),
+            $bg-c1-primary 100%
           );
+          background-size: 200%;
+
+          &:hover {
+            background-position: right center;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
         }
       }
     }

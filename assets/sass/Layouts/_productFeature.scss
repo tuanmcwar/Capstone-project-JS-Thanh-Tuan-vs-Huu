@@ -21,11 +21,17 @@
           //
           background: $bg-c1-secondary;
           position: relative;
+
           .product-img {
             display: block;
             margin: 45px 57px 30px 57px;
             width: 250px;
             height: 200px;
+            transition: linear 1s;
+
+            &:hover {
+              transform: scaleX(-1);
+            }
           }
           .product-name {
             margin-left: 23px;
@@ -58,6 +64,11 @@
               border: none;
               background-color: #e1b067;
               @include text(24px, 200, $text-c1-dark, 29px);
+              &:hover {
+                cursor: pointer;
+                background-color: $bg-c1-primary;
+                transition: all 0.5s;
+              }
             }
             .product-price {
               height: 100%;
