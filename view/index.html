@@ -57,47 +57,28 @@
           <!-- <img src="../assets/image/image6.png" alt=""> -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                class="swiper-lazy"
-              />
+              <!-- <div class="carousel-img">
+                <img
+                  data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  class="swiper-lazy"
+                />
+              </div>
               <div
                 class="swiper-lazy-preloader swiper-lazy-preloader-white"
               ></div>
-              <h3 id="productName">Product Name</h3>
-              <p id="productDescription">Product Description</p>
-              <button id="Buy">Buy now</button>
+              <div class="product-info">
+                <h3 id="productName">Product Name</h3>
+                <p id="productDescription">Product Description</p>
+                <button id="Buy">Buy now</button>
+              </div> -->
             </div>
-            <div class="swiper-slide">
-              <img
-                data-src="https://swiperjs.com/demos/images/nature-2.jpg"
-                class="swiper-lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <h3 id="productName">Product Name</h3>
-              <p id="productDescription">Product Description</p>
-              <button id="Buy">Buy now</button>
-            </div>
-            <div class="swiper-slide">
-              <img
-                data-src="https://swiperjs.com/demos/images/nature-3.jpg"
-                class="swiper-lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <h3 id="productName">Product Name</h3>
-              <p id="productDescription">Product Description</p>
-              <button id="Buy">Buy now</button>
-            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
           </div>
           <div class="swiper-button-next fa-solid fa-caret-right"></div>
           <i class="fa-solid fa-caret-right"></i>
           <i class="swiper-button-prev fa-solid fa-caret-left"></i>
           <i class="fa-solid fa-caret-left"></i>
-
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -105,51 +86,70 @@
     <div class="productFeature">
       <div class="container">
         <h3 class="product-feature-label">Product Features</h3>
-        <div class="product-item">
-          <div class="item">
-            <img class="product-img" src="../assets/image/image 5.png" alt="" />
-            <h3 class="product-name">Adidas Prophere</h3>
+        <div class="product">
+          <div class="product-item">
+            <div id="item-Features" class="item">
+              <img
+                class="product-img"
+                src="../assets/image/image 5.png"
+                alt=""
+              />
+              <h3 class="product-name">Adidas Prophere</h3>
 
-            <p class="product-description">short descript</p>
-            <div class="card-bottom">
-              <button class="btn-buy">Buy now</button>
+              <p class="product-description">short descript</p>
+              <div class="card-bottom">
+                <button class="btn-buy">Buy now</button>
 
-              <p class="product-price">85$</p>
+                <p class="product-price">85$</p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img class="product-img" src="../assets/image/image 5.png" alt="" />
-            <h3 class="product-name">Adidas Prophere</h3>
+            <!-- <div class="item">
+              <img
+                class="product-img"
+                src="../assets/image/image 5.png"
+                alt=""
+              />
+              <h3 class="product-name">Adidas Prophere</h3>
 
-            <p class="product-description">short descript</p>
-            <div class="card-bottom">
-              <button class="btn-buy">Buy now</button>
+              <p class="product-description">short descript</p>
+              <div class="card-bottom">
+                <button class="btn-buy">Buy now</button>
 
-              <p class="product-price">85$</p>
+                <p class="product-price">85$</p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img class="product-img" src="../assets/image/image 5.png" alt="" />
-            <h3 class="product-name">Adidas Prophere</h3>
+            <div class="item">
+              <img
+                class="product-img"
+                src="../assets/image/image 5.png"
+                alt=""
+              />
+              <h3 class="product-name">Adidas Prophere</h3>
 
-            <p class="product-description">short descript</p>
-            <div class="card-bottom">
-              <button class="btn-buy">Buy now</button>
+              <p class="product-description">short descript</p>
+              <div class="card-bottom">
+                <button class="btn-buy">Buy now</button>
 
-              <p class="product-price">85$</p>
+                <p class="product-price">85$</p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img class="product-img" src="../assets/image/image 5.png" alt="" />
-            <h3 class="product-name">Adidas Prophere</h3>
+            <div class="item">
+              <img
+                class="product-img"
+                src="../assets/image/image 5.png"
+                alt=""
+              />
+              <h3 class="product-name">Adidas Prophere</h3>
 
-            <p class="product-description">short descript</p>
-            <div class="card-bottom">
-              <button class="btn-buy">Buy now</button>
+              <p class="product-description">short descript</p>
+              <div class="card-bottom">
+                <button class="btn-buy">Buy now</button>
 
-              <p class="product-price">85$</p>
-            </div>
+                <p class="product-price">85$</p>
+              </div>
+            </div> -->
           </div>
+          <div id="pagination"></div>
         </div>
       </div>
     </div>
@@ -158,16 +158,26 @@
         <img src="../assets/image/image 8 (1).png" alt="footer" />
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../controllers/productFeatures.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,
 
         lazy: true,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -178,7 +188,8 @@
         },
       });
     </script>
-    <script type="text/javascript" src="../model/Product.js"></script>
+    <script src="../controllers/detail.js"></script>
+    <script type="text/javascript" src="../controllers/carousel.js"></script>
     <script type="text/javascript" src="../controllers/index.js"></script>
   </body>
 </html>
