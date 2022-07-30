@@ -4,61 +4,70 @@
     // display: flex;
     width: 1280px;
     height: 1044px;
+    overflow: hidden;
     .product-feature-label {
       @include text($text-4xl, $text-regular, $text-c1-dark, 48px);
       text-align: center;
       margin-top: 30px;
     }
-    .product-item {
-      margin: 50px;
-      display: grid;
-      height: 100%;
-      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-      gap: 50px 60px;
-      .item {
-        //
-        background: $bg-c1-secondary;
-        position: relative;
-        .product-img {
-          display: block;
-          margin: 45px 57px 30px 57px;
-        }
-        .product-name {
-          margin-left: 23px;
-          @include text(24px, $text-light, $text-c1-dark, 29px);
-        }
-        .product-description {
-          margin-left: 23px;
-          margin-top: 8px;
-          margin-bottom: 13px;
-          @include text($text-2xl, $text-light, $text-c1-der, 24px);
-          display: -webkit-box;
-          -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          word-break: break-word;
-        }
-        .card-bottom {
-          @include flexDefault();
-          flex-wrap: nowrap;
-
-          height: 64px;
-          .btn-buy {
-            width: 50%;
-            height: 100%;
-            border: none;
-            background-color: #e1b067;
-            @include text(24px, 200, $text-c1-dark, 29px);
+    .product {
+      .product-item {
+        margin: 50px;
+        display: grid;
+        height: 100%;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        gap: 50px 60px;
+        .item {
+          //
+          background: $bg-c1-secondary;
+          position: relative;
+          .product-img {
+            display: block;
+            margin: 45px 57px 30px 57px;
+            width: 220px;
+            height: 200px;
           }
-          .product-price {
-            height: 100%;
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #dedddc;
-            @include text(24px, $text-semibold, $text-c1-dark, 29px);
+          .product-name {
+            margin-left: 23px;
+            @include text(24px, $text-light, $text-c1-dark, 29px);
+          }
+          .product-description {
+            margin-left: 23px;
+            margin-top: 8px;
+            margin-bottom: 13px;
+            @include text($text-2xl, $text-light, $text-c1-der, 24px);
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+          }
+          .card-bottom {
+            @include flexDefault();
+            flex-wrap: nowrap;
+
+            height: 64px;
+            .btn-buy {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              width: 50%;
+              height: 100%;
+              border: none;
+              background-color: #e1b067;
+              @include text(24px, 200, $text-c1-dark, 29px);
+            }
+            .product-price {
+              height: 100%;
+              width: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #dedddc;
+              @include text(24px, $text-semibold, $text-c1-dark, 29px);
+            }
           }
         }
       }
