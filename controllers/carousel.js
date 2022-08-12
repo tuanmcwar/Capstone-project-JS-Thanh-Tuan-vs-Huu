@@ -31,18 +31,47 @@ function getCargousel(arrCargousel, index) {
     price.sort(sortPrice);
     // console.log("price", price);
   }
-  for (let i = 0; i < arrCargousel.length; i++) {
+  // for (let i = 0; i < arrCargousel.length; i++) {
+  //   const pd = arrCargousel[i];
+  //   for (let i = 0; i < index; i++) {
+  //     const pd1 = price[i];
+  //     //   console.log("price1111", pd1);
+
+  //     if (pd1 === pd.price) {
+  //       imge = pd.image;
+  //       // console.log("ảnh", pd.id);
+
+  //       html += `
+  //       <div class="swiper-slide">
+  //           <div class="carousel-img">
+  //               <img
+  //               src="${imge}"
+  //               class="swiper-lazy"
+  //             />
+  //             </div>
+  //               <div class="product-info">
+  //                   <h3 id="productName">${pd.name}</h3>
+  //                   <p id="productDescription">${pd.description}</p>
+
+  //                   <a href="../view/detail.html?productid=${pd.id}" id="Buy" onclick="showDetail('${pd.id}')">  Buy now</a>
+  //               </div>
+  //       </div>
+  //      `;
+  //     }
+  //   }
+  // }
+  for (let i = 0; i < index; i++) {
     const pd = arrCargousel[i];
-    for (let i = 0; i < index; i++) {
-      const pd1 = price[i];
-      //   console.log("price1111", pd1);
+    // for (let i = 0; i < index; i++) {
+    //   const pd1 = price[i];
+    //   //   console.log("price1111", pd1);
 
-      if (pd1 === pd.price) {
-        imge = pd.image;
-        // console.log("ảnh", pd.id);
+    //   if (pd1 === pd.price) {
+    imge = pd.image;
+    console.log("ảnh", pd);
 
-        html += `
-        <div class="swiper-slide">
+    html += `
+        <div class="swiper-slide" id=${i}>
             <div class="carousel-img">
                 <img
                 src="${imge}"
@@ -57,14 +86,32 @@ function getCargousel(arrCargousel, index) {
                 </div>
         </div>
        `;
-      }
-    }
-  }
 
+    //   }
+    // }
+  }
+  console.log(html);
   function sortPrice(a, b) {
     return b - a;
   }
 
   document.querySelector(".swiper-wrapper").innerHTML = html;
+
+  new Swiper(".mySwiper", {
+    loop: true,
+
+    lazy: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }
-function reanderCargousel(arrCargousel, index) {}

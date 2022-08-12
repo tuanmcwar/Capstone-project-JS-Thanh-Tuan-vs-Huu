@@ -91,6 +91,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
+
         a {
           list-style: none;
           background-color: $text-c1-der;
@@ -107,6 +108,9 @@
           &:hover {
             cursor: pointer;
             opacity: 0.3;
+          }
+          &.active {
+            background-color: red;
           }
         }
       }

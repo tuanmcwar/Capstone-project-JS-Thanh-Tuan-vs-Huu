@@ -36,18 +36,34 @@ function renderPagination(arr) {
   renderProduct(perPD);
   console.log("perPD", perPD);
 }
+
+let check = 0;
+
 function number() {
   totalPages = pdPage.length / perPage;
   console.log("pdPage", pdPage);
   for (let i = 0; i < totalPages; i++) {
     document.getElementById(
       "pagination"
-    ).innerHTML += `<a id="numPagni"  onclick="handel(${i + 1})">${i + 1}</a>`;
+    ).innerHTML += `<a class="paginate-button" id="numPage${
+      i + 1
+    }"  onclick="handel(${i + 1})">${i + 1}</a>`;
   }
 }
+
 function handel(num) {
   //   let pdPage = arr;
-  let numPagni = document.querySelector("#numPagni").innerHTML;
+  let text = "numPage" + num;
+  let allButton = document.querySelectorAll(".paginate-button");
+
+  allButton.forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  document.getElementById(text).classList.add("active");
+
+  check = num;
+  let numPagni = document.querySelector(`#numPage${num}`).innerHTML;
   if ((numPagni = num)) {
     console.log("numPagni", numPagni);
   }
@@ -57,6 +73,7 @@ function handel(num) {
     (curPage - 1) * perPage,
     (curPage - 1) * perPage + perPage
   );
+
   renderProduct(perPD);
   console.log("perPD", perPD);
 }
