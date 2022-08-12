@@ -50,6 +50,7 @@ header {
       height: 32px;
       left: 1170px;
       top: 15px;
+      text-decoration: none;
       @include text($text-base, $text-light, rgba(246, 246, 246, 1), 19.36px);
     }
   }

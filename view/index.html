@@ -36,7 +36,7 @@
           <p class="textcart">(1)</p>
         </div>
         <div class="login">Login</div>
-        <div class="register">Register</div>
+        <a href="../view/register.html" class="register">Register</a>
         <!-- </div> -->
       </div>
     </header>
@@ -56,8 +56,8 @@
         <div class="swiper mySwiper">
           <!-- <img src="../assets/image/image6.png" alt=""> -->
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- <div class="carousel-img">
+            <!-- <div class="swiper-slide">
+              <div class="carousel-img">
                 <img
                   data-src="https://swiperjs.com/demos/images/nature-1.jpg"
                   class="swiper-lazy"
@@ -70,10 +70,17 @@
                 <h3 id="productName">Product Name</h3>
                 <p id="productDescription">Product Description</p>
                 <button id="Buy">Buy now</button>
-              </div> -->
+              </div>
             </div>
             <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div> -->
+            <!-- <div class="swiper-slide"></div>
             <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div> -->
+
+            <!-- <div class="swiper-slide"></div>
+
+            <div class="swiper-slide"></div> -->
           </div>
           <div class="swiper-button-next fa-solid fa-caret-right"></div>
           <i class="fa-solid fa-caret-right"></i>
@@ -170,21 +177,10 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-
-        lazy: true,
+      new Swiper(".mySwiper", {
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
         },
       });
     </script>
